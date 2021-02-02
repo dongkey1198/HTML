@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gmail.css">
+    <title>Gmail Inbox</title>
+</head>
+<body>
+    <!-- table tag -->
+    <table class="inbox">
+        <!-- head row: invisible on the UI -->
+        <thead class="sr-only">
+            <tr>
+                <th scope="col">Actions</th>
+                <th scope="col">Sender</th>
+                <th scope="col">Title</th>
+                <th scope="col">Timestamp</th>
+            </tr>
+        </thead>
+        <!-- body rows -->
+        <tbody>
+            <!-- first raw -->
+            <tr class="unread">
+                <!-- check box -->
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input id="indbox1" type="checkbox"/>
+                            <label for="inbox1" class="sr-only">Select this email</label>
+                        </div>
+                        <!-- Favorite btn: Star -->
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">add to favorite</span>
+                        </button>
+                    </div>
+                </td>
+                <!-- Sender -->
+                <td>
+                    Dongkey
+                </td>
+                <!-- Title -->
+                <td>
+                    <a href="#">
+                        <strong>
+                            Rate your course: FRONTEND 101 WITH KIMBUG 
+                        </strong>
+                        <span>
+                            - Woohyeon. How’s everything going? We want to hear your opnion on...
+                        </span>
+                    </a>
+                </td>
+                <!-- Time -->
+                <td>
+                    3:34PM
+                </td>
+            </tr>
+            <!-- First Raw end  -->
+
+            <!-- Second raw -->
+            <tr class="read">
+                <!-- check box -->
+                <td>
+                    <div>
+                        <input id="indbox1" type="checkbox"/>
+                        <label for="inbox1" class="sr-only">Select this email</label>
+                    </div>
+                    <!-- Favorite btn: Star -->
+                    <button type="button">
+                        <span class="sr-only">add to favorite</span>
+                    </button>
+                </td>
+                <!-- Sender -->
+                <td>
+                    Dongkey
+                </td>
+                <!-- Title -->
+                <td>
+                    <a href="#">
+                        <strong>
+                            Rate your course: FRONTEND 101 WITH KIMBUG 
+                        </strong>
+                        <span>
+                            - Woohyeon. How’s everything going? We want to hear your opnion on...
+                        </span>
+                    </a>
+                </td>
+                <!-- Time -->
+                <td>
+                    3:34PM
+                </td>
+            </tr>   
+            <!-- Second Raw end  -->
+        </tbody>
+        <!-- table body end -->
+    </table>
+    <!-- table end -->
+    <script src="./gmail.js"></script>
+</body>
+</html>
+
